@@ -19,7 +19,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    self.window.rootViewController = [ViewController new];
+    self.window.rootViewController = [[UINavigationController alloc] initWithRootViewController:[ViewController new]];
     
     //打开状态栏菊花
     [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;

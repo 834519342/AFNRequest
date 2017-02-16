@@ -48,7 +48,10 @@ static AFHTTPSessionManager *afnManager = nil;
     URLString = [self getURLFrontURL:BaseURL BackURL:URLString];
     
     //GET请求
-    [afnManager GET:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [afnManager GET:URLString parameters:parameters progress:^(NSProgress * _Nonnull downloadProgress) {
+        //请求进度
+        NSLog(@"downloadProgress:%f",downloadProgress.fractionCompleted );
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //请求成功
         if (success != nil) {
             success(responseObject);
@@ -73,7 +76,11 @@ static AFHTTPSessionManager *afnManager = nil;
     URLString = [self getURLFrontURL:BaseURL BackURL:URLString];
     
     //POST请求
-    [afnManager POST:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+    [afnManager POST:URLString parameters:parameters progress:^(NSProgress * _Nonnull uploadProgress) {
+        //请求进度
+        NSLog(@"uploadProgress:%f",uploadProgress.fractionCompleted );
+        
+    } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         //请求成功
         if (success != nil) {
             success(responseObject);
