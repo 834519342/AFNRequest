@@ -59,4 +59,9 @@ typedef void (^Failure)(NSError *error);
  */
 - (NSString *)getURLFrontURL:(NSString *)frontURL BackURL:(NSString *)backURL;
 
+/** 查看当前网络状态
+ *  @param completion 返回结果
+ */
++ (void)getNetWorkingStatus:(void(^)(AFNetworkReachabilityStatus status))completion;
+
 @end

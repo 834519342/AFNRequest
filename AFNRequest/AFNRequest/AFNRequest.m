@@ -9,8 +9,12 @@
 #import "AFNRequest.h"
 
 static AFNRequest *manager = nil;
-//创建AFN管理者
+
+//创建AFN请求管理者
 static AFHTTPSessionManager *afnManager = nil;
+
+//创建AFN网络监控管理者
+static AFNetworkReachabilityManager *reachabilityManager = nil;
 
 @implementation AFNRequest
 
@@ -126,5 +130,49 @@ static AFHTTPSessionManager *afnManager = nil;
     
     return nil;
 }
+
+//查看当前网络状态
++ (void)getNetWorkingStatus:(void(^)(AFNetworkReachabilityStatus status))completion
+{
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        reachabilityManager = [AFNetworkReachabilityManager sharedManager];
+    });
+    
+    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        [reachabilityManager startMonitoring];
+        
+        __block AFNetworkReachabilityStatus copyStatus;
+        
+        [reachabilityManager setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+            switch (status) {
+                case AFNetworkReachabilityStatusUnknown:
+                    NSLog(@"未知网络");
+                    break;
+                case AFNetworkReachabilityStatusNotReachable:
+                    NSLog(@"未连接");
+                    break;
+                case AFNetworkReachabilityStatusReachableViaWWAN:
+                    NSLog(@"手机移动网络");
+                    break;
+                case AFNetworkReachabilityStatusReachableViaWiFi:
+                    NSLog(@"WIFI网络");
+                    break;
+                default:
+                    break;
+            }
+            copyStatus = status;
+        }];
+        //GCD异步延时
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            NSLog(@"GCD延时执行");
+            if (completion) {
+                completion(copyStatus);
+            }
+        });
+    });
+}
+
 
 @end

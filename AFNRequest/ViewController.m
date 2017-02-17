@@ -10,6 +10,9 @@
 
 @interface ViewController ()
 
+//定时器对象
+@property (nonatomic, strong) dispatch_source_t timer;
+
 @end
 
 @implementation ViewController
@@ -39,9 +42,30 @@
     } failure:^(NSError *error) {
         
     }];
+    
+    __block int i = 0;
+    //GCD定时器，精度高
+    self.timer = dispatch_source_create(DISPATCH_SOURCE_TYPE_TIMER, 0, 0, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0));
+    
+    dispatch_source_set_timer(self.timer, dispatch_walltime(NULL, 0), 3.0 * NSEC_PER_SEC, 0);
+    
+    dispatch_source_set_event_handler(self.timer, ^{
+        NSLog(@"计时器i=%d",i++);
+        
+        [AFNRequest getNetWorkingStatus:^(AFNetworkReachabilityStatus status) {
+            NSLog(@"%ld",(long)status);
+        }];
+
+    });
+    //启动定时器
+    dispatch_resume(self.timer);
+    
 }
 
-
+- (void)dealloc {
+    //关闭定时器
+    dispatch_source_cancel(self.timer);
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
