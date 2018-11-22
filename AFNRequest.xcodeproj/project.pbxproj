@@ -13,8 +13,6 @@
 		2BFF5BA71DFFB82300A20A62 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF5BA51DFFB82300A20A62 /* Main.storyboard */; };
 		2BFF5BA91DFFB82300A20A62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF5BA81DFFB82300A20A62 /* Assets.xcassets */; };
 		2BFF5BAC1DFFB82300A20A62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BFF5BAA1DFFB82300A20A62 /* LaunchScreen.storyboard */; };
-		2BFF5BB71DFFB82300A20A62 /* AFNRequestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF5BB61DFFB82300A20A62 /* AFNRequestTests.m */; };
-		2BFF5BC21DFFB82300A20A62 /* AFNRequestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF5BC11DFFB82300A20A62 /* AFNRequestUITests.m */; };
 		2BFF5BF51DFFB84300A20A62 /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF5BD21DFFB84300A20A62 /* AFHTTPSessionManager.m */; };
 		2BFF5BF61DFFB84300A20A62 /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF5BD51DFFB84300A20A62 /* AFNetworkReachabilityManager.m */; };
 		2BFF5BF71DFFB84300A20A62 /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF5BD71DFFB84300A20A62 /* AFSecurityPolicy.m */; };
@@ -33,23 +31,6 @@
 		2BFF5C041DFFB84300A20A62 /* UIWebView+AFNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 2BFF5BF41DFFB84300A20A62 /* UIWebView+AFNetworking.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		2BFF5BB31DFFB82300A20A62 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFF5B911DFFB82300A20A62 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BFF5B981DFFB82300A20A62;
-			remoteInfo = AFNRequest;
-		};
-		2BFF5BBE1DFFB82300A20A62 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2BFF5B911DFFB82300A20A62 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2BFF5B981DFFB82300A20A62;
-			remoteInfo = AFNRequest;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		2BFF5B991DFFB82300A20A62 /* AFNRequest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AFNRequest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BFF5B9D1DFFB82300A20A62 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,12 +42,6 @@
 		2BFF5BA81DFFB82300A20A62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BFF5BAB1DFFB82300A20A62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BFF5BAD1DFFB82300A20A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BFF5BB21DFFB82300A20A62 /* AFNRequestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFNRequestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BFF5BB61DFFB82300A20A62 /* AFNRequestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNRequestTests.m; sourceTree = "<group>"; };
-		2BFF5BB81DFFB82300A20A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2BFF5BBD1DFFB82300A20A62 /* AFNRequestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AFNRequestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		2BFF5BC11DFFB82300A20A62 /* AFNRequestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AFNRequestUITests.m; sourceTree = "<group>"; };
-		2BFF5BC31DFFB82300A20A62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BFF5BD11DFFB84300A20A62 /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
 		2BFF5BD21DFFB84300A20A62 /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
 		2BFF5BD31DFFB84300A20A62 /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
@@ -113,20 +88,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BFF5BAF1DFFB82300A20A62 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BFF5BBA1DFFB82300A20A62 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -134,8 +95,6 @@
 			isa = PBXGroup;
 			children = (
 				2BFF5B9B1DFFB82300A20A62 /* AFNRequest */,
-				2BFF5BB51DFFB82300A20A62 /* AFNRequestTests */,
-				2BFF5BC01DFFB82300A20A62 /* AFNRequestUITests */,
 				2BFF5B9A1DFFB82300A20A62 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -144,8 +103,6 @@
 			isa = PBXGroup;
 			children = (
 				2BFF5B991DFFB82300A20A62 /* AFNRequest.app */,
-				2BFF5BB21DFFB82300A20A62 /* AFNRequestTests.xctest */,
-				2BFF5BBD1DFFB82300A20A62 /* AFNRequestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -174,24 +131,6 @@
 				2BFF5B9D1DFFB82300A20A62 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		2BFF5BB51DFFB82300A20A62 /* AFNRequestTests */ = {
-			isa = PBXGroup;
-			children = (
-				2BFF5BB61DFFB82300A20A62 /* AFNRequestTests.m */,
-				2BFF5BB81DFFB82300A20A62 /* Info.plist */,
-			);
-			path = AFNRequestTests;
-			sourceTree = "<group>";
-		};
-		2BFF5BC01DFFB82300A20A62 /* AFNRequestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				2BFF5BC11DFFB82300A20A62 /* AFNRequestUITests.m */,
-				2BFF5BC31DFFB82300A20A62 /* Info.plist */,
-			);
-			path = AFNRequestUITests;
 			sourceTree = "<group>";
 		};
 		2BFF5BCF1DFFB84300A20A62 /* AFNRequest */ = {
@@ -272,42 +211,6 @@
 			productReference = 2BFF5B991DFFB82300A20A62 /* AFNRequest.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2BFF5BB11DFFB82300A20A62 /* AFNRequestTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2BFF5BC91DFFB82300A20A62 /* Build configuration list for PBXNativeTarget "AFNRequestTests" */;
-			buildPhases = (
-				2BFF5BAE1DFFB82300A20A62 /* Sources */,
-				2BFF5BAF1DFFB82300A20A62 /* Frameworks */,
-				2BFF5BB01DFFB82300A20A62 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2BFF5BB41DFFB82300A20A62 /* PBXTargetDependency */,
-			);
-			name = AFNRequestTests;
-			productName = AFNRequestTests;
-			productReference = 2BFF5BB21DFFB82300A20A62 /* AFNRequestTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		2BFF5BBC1DFFB82300A20A62 /* AFNRequestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 2BFF5BCC1DFFB82300A20A62 /* Build configuration list for PBXNativeTarget "AFNRequestUITests" */;
-			buildPhases = (
-				2BFF5BB91DFFB82300A20A62 /* Sources */,
-				2BFF5BBA1DFFB82300A20A62 /* Frameworks */,
-				2BFF5BBB1DFFB82300A20A62 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2BFF5BBF1DFFB82300A20A62 /* PBXTargetDependency */,
-			);
-			name = AFNRequestUITests;
-			productName = AFNRequestUITests;
-			productReference = 2BFF5BBD1DFFB82300A20A62 /* AFNRequestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -321,18 +224,6 @@
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = 53AKWD3AD4;
 						ProvisioningStyle = Automatic;
-					};
-					2BFF5BB11DFFB82300A20A62 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 53AKWD3AD4;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2BFF5B981DFFB82300A20A62;
-					};
-					2BFF5BBC1DFFB82300A20A62 = {
-						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = 53AKWD3AD4;
-						ProvisioningStyle = Automatic;
-						TestTargetID = 2BFF5B981DFFB82300A20A62;
 					};
 				};
 			};
@@ -350,8 +241,6 @@
 			projectRoot = "";
 			targets = (
 				2BFF5B981DFFB82300A20A62 /* AFNRequest */,
-				2BFF5BB11DFFB82300A20A62 /* AFNRequestTests */,
-				2BFF5BBC1DFFB82300A20A62 /* AFNRequestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,20 +253,6 @@
 				2BFF5BAC1DFFB82300A20A62 /* LaunchScreen.storyboard in Resources */,
 				2BFF5BA91DFFB82300A20A62 /* Assets.xcassets in Resources */,
 				2BFF5BA71DFFB82300A20A62 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BFF5BB01DFFB82300A20A62 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BFF5BBB1DFFB82300A20A62 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,36 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		2BFF5BAE1DFFB82300A20A62 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BFF5BB71DFFB82300A20A62 /* AFNRequestTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BFF5BB91DFFB82300A20A62 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				2BFF5BC21DFFB82300A20A62 /* AFNRequestUITests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		2BFF5BB41DFFB82300A20A62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2BFF5B981DFFB82300A20A62 /* AFNRequest */;
-			targetProxy = 2BFF5BB31DFFB82300A20A62 /* PBXContainerItemProxy */;
-		};
-		2BFF5BBF1DFFB82300A20A62 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 2BFF5B981DFFB82300A20A62 /* AFNRequest */;
-			targetProxy = 2BFF5BBE1DFFB82300A20A62 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		2BFF5BA51DFFB82300A20A62 /* Main.storyboard */ = {
@@ -579,56 +425,6 @@
 			};
 			name = Release;
 		};
-		2BFF5BCA1DFFB82300A20A62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 53AKWD3AD4;
-				INFOPLIST_FILE = AFNRequestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tj.AFNRequestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFNRequest.app/AFNRequest";
-			};
-			name = Debug;
-		};
-		2BFF5BCB1DFFB82300A20A62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				DEVELOPMENT_TEAM = 53AKWD3AD4;
-				INFOPLIST_FILE = AFNRequestTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tj.AFNRequestTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AFNRequest.app/AFNRequest";
-			};
-			name = Release;
-		};
-		2BFF5BCD1DFFB82300A20A62 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 53AKWD3AD4;
-				INFOPLIST_FILE = AFNRequestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tj.AFNRequestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AFNRequest;
-			};
-			name = Debug;
-		};
-		2BFF5BCE1DFFB82300A20A62 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				DEVELOPMENT_TEAM = 53AKWD3AD4;
-				INFOPLIST_FILE = AFNRequestUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tj.AFNRequestUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_TARGET_NAME = AFNRequest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -648,22 +444,7 @@
 				2BFF5BC81DFFB82300A20A62 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-		};
-		2BFF5BC91DFFB82300A20A62 /* Build configuration list for PBXNativeTarget "AFNRequestTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2BFF5BCA1DFFB82300A20A62 /* Debug */,
-				2BFF5BCB1DFFB82300A20A62 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-		};
-		2BFF5BCC1DFFB82300A20A62 /* Build configuration list for PBXNativeTarget "AFNRequestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				2BFF5BCD1DFFB82300A20A62 /* Debug */,
-				2BFF5BCE1DFFB82300A20A62 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
